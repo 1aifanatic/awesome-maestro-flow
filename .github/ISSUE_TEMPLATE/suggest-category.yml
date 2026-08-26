@@ -1,0 +1,40 @@
+name: Suggest a Category
+description: Suggest a new category for the Awesome Maestro Flow list.
+title: "[Category Suggestion]: "
+labels: ["category-suggestion"]
+body:
+  - type: input
+    id: category-name
+    attributes:
+      label: Category Name
+      description: The name of the proposed category.
+      placeholder: "e.g. Security & Compliance"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What would this category cover?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it deserve a separate category?
+      description: Explain why this needs its own category instead of fitting into an existing one.
+    validations:
+      required: true
+  - type: textarea
+    id: example-types
+    attributes:
+      label: Example types of projects
+      description: What kinds of projects would go in this category?
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+    validations:
+      required: false

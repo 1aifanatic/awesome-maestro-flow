@@ -1,0 +1,91 @@
+name: Submit a Maestro Flow Project
+description: Submit a project to be added to the Awesome Maestro Flow list.
+title: "[Project Submission]: "
+labels: ["project-submission"]
+body:
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      description: The name of your project.
+      placeholder: "e.g. Maestro Invoice Processor"
+    validations:
+      required: true
+  - type: input
+    id: project-url
+    attributes:
+      label: Project URL
+      description: Link to the repository, demo, tutorial, or blog post.
+      placeholder: "https://github.com/..."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A short, neutral description of what the project does.
+      placeholder: "What does the project do and why is it useful?"
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Your name or GitHub username.
+      placeholder: "@username"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which category does this project belong to?
+      options:
+        - AI Agents
+        - Human-in-the-Loop
+        - Document Processing
+        - API Integrations
+        - Enterprise Automation
+        - Data Pipelines
+        - MCP Integrations
+        - Learning Projects
+        - Community Projects
+    validations:
+      required: true
+  - type: input
+    id: technologies
+    attributes:
+      label: Technologies
+      description: Technologies used, e.g. UiPath Maestro Flow, Agent Builder, IXP, APIs.
+      placeholder: "UiPath Maestro Flow, Agent Builder, ..."
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: License of the project, if applicable.
+      placeholder: "MIT"
+    validations:
+      required: false
+  - type: input
+    id: demo-url
+    attributes:
+      label: Demo URL
+      description: Optional link to a demo, screenshot, or video.
+    validations:
+      required: false
+  - type: textarea
+    id: why-include
+    attributes:
+      label: Why should this be included?
+      description: What makes this project useful to the Maestro Flow community?
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional information
+      description: Anything else we should know, such as setup notes or limitations.
+    validations:
+      required: false

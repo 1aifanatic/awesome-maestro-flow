@@ -1,0 +1,40 @@
+name: Report a Broken Link
+description: Report a broken or outdated link in the Awesome Maestro Flow list.
+title: "[Broken Link]: "
+labels: ["broken-link"]
+body:
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      description: The name of the project with the broken link.
+    validations:
+      required: true
+  - type: input
+    id: broken-url
+    attributes:
+      label: Broken URL
+      description: The URL that is no longer working.
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location in the repository
+      description: Which file contains the broken link?
+      placeholder: "e.g. projects/ai-agents.md"
+    validations:
+      required: true
+  - type: input
+    id: replacement-url
+    attributes:
+      label: Suggested replacement URL
+      description: Optional. A working URL that should replace the broken one.
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+    validations:
+      required: false
